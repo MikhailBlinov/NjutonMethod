@@ -27,8 +27,8 @@ namespace NjutonMethod
         }
         static double Calculation(Func<double, double> f, double delta, double x0, double epsilum)
         {
-            double tmpValue = 1000000;
-            double derivative;
+            double tmpValue = Double.MaxValue;
+            double derivative = Double.MaxValue;
             double nextX = x0;
             double root = double.MaxValue;
 
