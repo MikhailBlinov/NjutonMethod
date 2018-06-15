@@ -59,7 +59,14 @@ namespace NjutonMethod
             return root;
         }
 
-
+        /// <summary>
+        /// It chooses initial root values
+        /// </summary>
+        /// <param name="f"></param>
+        /// <param name="step"></param>
+        /// <param name="leftEdge"></param>
+        /// <param name="rightEdge"></param>
+        /// <returns></returns>
         public static List<double> ChooseInitialValues(Func<double, double> f, double step, double leftEdge, double rightEdge)
         {
             List<double> values = new List<double>();
